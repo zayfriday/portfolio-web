@@ -10,23 +10,22 @@ function About() {
     const [readMore2, setReadMore2] = useState(false);
 
     const readMoreBtn1 = () => {
-        setReadMore1(!readMore1)
+        setReadMore1(!readMore1);
     }
     const readMoreBtn2 = () => {
-        setReadMore2(!readMore2)
+        setReadMore2(!readMore2);
     }
 
 
     return (
-        <div id="about" className='lg:my-20 py-20 text-slate-400 tracking-tight'>
+        <div id="about" className='flex flex-col lg:my-20 py-20 text-slate-400 tracking-tight'>
 
-            <div className='mb-20 p-12 w-full bg-gradient-to-r from-transparent from-20% via-rose-900 via-45% to-transparent to-70% 
-            border-t-2 border-b border-slate-500 border-opacity-10 rounded-lg'>
+            <div className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
                     transition={{ duration: 0.75 }}
-                    className='bg-gradient-to-r from-emerald-400 to-green-700 bg-clip-text text-transparent
+                    className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
                     font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
                         Who am I?
                 </motion.h2>
@@ -45,7 +44,7 @@ function About() {
                 {/* Bio div */}
                 <motion.div className='w-full flex flex-col lg:w-3/5 px-4'>
                     <motion.p 
-                    initial={{ x: -100, opacity: 0}} 
+                    initial={{ x: -300, opacity: 0}} 
                     whileInView={{ x: 0, opacity: 1}}
                     transition={{ duration: 1 }}
                     className='pb-6'>
@@ -60,27 +59,27 @@ function About() {
                         <motion.button
                         initial={{ x: -300, opacity: 0}} 
                         whileInView={{ x: 0, opacity: 1}}
-                        transition={{ duration: 1.5}}
-                        className='pb-2 transition-all duration-200 ease-in-out hover:text-slate-800'
+                        transition={{ duration: 1 }}
+                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
                         onClick={readMoreBtn1}>
                             Click here if you want to read more about my story
                         </motion.button>
                     </div>) : 
                     (<div>
                         <motion.p 
-                        initial={{ x: -500, opacity: 0}} 
-                        whileInView={{ x: 0, opacity: 1}}
-                        transition={{ duration: 1.5}}
+                        initial={{ opacity: 0, scale: 0}}
+                        animate={{ opacity: 1, scale: 1}}
+                        transition={{ duration: 0.3, ease: "easeInOut"}}
                          className='pb-2'>
                             Tell my background story of how I got into tech and stuff.
                         </motion.p>
 
                         <motion.button
-                         initial={{ x: -300, opacity: 0}} 
-                         whileInView={{ x: 0, opacity: 1}}
-                         transition={{ duration: 1.5 }}
-                         className=' pb-2 transition-all duration-200 ease-in-out hover:text-slate-800'
-                         onClick={readMoreBtn1}>
+                        initial={{ opacity: 0, scale: 0}}
+                        animate={{ opacity: 1, scale: 1}}
+                        transition={{ duration: 0.3, ease: "easeInOut"}}
+                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
+                        onClick={readMoreBtn1}>
                             Show less
                         </motion.button>
                     </div>)}
@@ -88,43 +87,43 @@ function About() {
                     <motion.p 
                     initial={{ x: -300, opacity: 0}} 
                     whileInView={{ x: 0, opacity: 1}}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                     className=' my-4'>
                         I’ve recently begun freelance work, developing full-stack websites for clients. If you’re interested, 
                         check out my Fiverr here, look at some of my previous work&nbsp;
-                        <a href="#cyber-proj" className='alilgn-baseline text-purple-700 underline 
-                        hover:text-blue-600 active:text-blue-900 transitoin-all duration-150'>here</a>, or contact me&nbsp;
-                        <a href="#contact" className='alilgn-baseline text-purple-700 underline 
-                        hover:text-blue-600 active:text-blue-900 transition-all duration-150'>here.</a>
+                        <a href="#cyber-proj" className=' text-purple-700 hover:text-blue-600 active:text-blue-900 
+                        transition-colors duration-150'>here</a>, or contact me&nbsp;
+                        <a href="#contact" className=' text-purple-700 hover:text-blue-600 active:text-blue-900 
+                        transition-colors duration-150'>here.</a>
                     </motion.p>
 
                     {/* readmore2 conditional view */}
                     {!readMore2 ? 
                     (<div>
                         <motion.button
-                        initial={{ x: -300, opacity: 0}} 
+                        initial={{opacity: 0}} 
                         whileInView={{ x: 0, opacity: 1}}
-                        transition={{ duration: 1.5}}
-                        className='pb-2 transition-all duration-200 ease-in-out hover:text-slate-800'
+                        transition={{ duration: 1 }}
+                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
                         onClick={readMoreBtn2}>
                             Read more
                         </motion.button>
                     </div>) : 
                     (<div>
                         <motion.p 
-                        initial={{ x: -500, opacity: 0}} 
-                        whileInView={{ x: 0, opacity: 1}}
-                        transition={{ duration: 1.5}}
-                         className='pb-2'>
-                            More about my skills and exp.
+                        initial={{ opacity: 0, scale: 0}}
+                        animate={{ opacity: 1, scale: 1}}
+                        transition={{ duration: 0.3, ease: "easeInOut"}}
+                        className='pb-2'>
+                            More about skills and xp.
                         </motion.p>
 
                         <motion.button
-                         initial={{ x: -300, opacity: 0}} 
-                         whileInView={{ x: 0, opacity: 1}}
-                         transition={{ duration: 1.5 }}
-                         className=' pb-2 transition-all duration-200 ease-in-out hover:text-slate-800'
-                         onClick={readMoreBtn2}>
+                        initial={{ opacity: 0, scale: 0}}
+                        animate={{ opacity: 1, scale: 1}}
+                        transition={{ duration: 0.3, ease: "easeInOut"}}
+                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
+                        onClick={readMoreBtn2}>
                             Show less
                         </motion.button>
                     </div>)}

@@ -7,22 +7,21 @@ import mcjm_pic from '../assets/MCJM_thumb.png'
 
 function Projects() {
     return (
-        <div id="projects" className='lg:my-20 py-20 text-slate-400'>
+        <div id="projects" className='flex flex-col items-start lg:my-20 py-20 text-slate-400'>
 
-            <div className='mb-20 p-12 w-full bg-gradient-to-r from-transparent from-25% via-amber-900 via-50% to-transparent to-75% 
-            border-t-2 border-b border-slate-500 border-opacity-10 rounded-lg'>
+            <div className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
                 <motion.h2
-                    whileInView={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: -100 }}
-                    transition={{ duration: 0.75 }}
-                    className='bg-gradient-to-r from-emerald-400 to-green-700 bg-clip-text text-transparent
-                    font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-4'>
-                        Projects
+                 whileInView={{ opacity: 1, y: 0 }}
+                 initial={{ opacity: 0, y: -100 }}
+                 transition={{ duration: 0.5 }}
+                 className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
+                 font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
+                    Projects
                 </motion.h2>
             </div>
 
 
-            {/* header */}
+            {/* PROGRAMMING HEADER */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0, x: 0 }}
                 initial={{ opacity: 0, y: -50, x: -200 }}
@@ -38,11 +37,11 @@ function Projects() {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -300 }}
                     transition={{ duration: 1 }}
-                    whileHover={{ scale: 1.2, transition: 0.2 }}
-                    whileTap={{ scale: 1.1 }}
+                    whileHover={{ scale: 1.05, transition: 0.2 }}
+                    whileTap={{ scale: 1.03 }}
                     className='relative my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                        <img className='rounded-[10px] w-full min-h-72 object-fill' src={mcjm_pic} alt="mcjm_thumnail" />
+                        <img className='rounded-[10px] w-full h-auto lg:min-h-72 object-fill' src={mcjm_pic} alt="mcjm_thumnail" />
                     </a>
                 </motion.div>
                 {/* info div */}
@@ -73,7 +72,7 @@ function Projects() {
 
             <motion.div className='w-full border-b border-slate-700 border-opacity-50 pb-12' />
 
-            {/* header */}
+            {/* CYBERSECURITY HEADER */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0, x: 0 }}
                 initial={{ opacity: 0, y: -50, x: -200 }}
@@ -89,8 +88,8 @@ function Projects() {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -300 }}
                     transition={{ duration: 1 }}
-                    whileHover={{ scale: 1.1, transition: 0.2 }}
-                    whileTap={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.05, transition: 0.2 }}
+                    whileTap={{ scale: 1.03 }}
                     className='relative group my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'>
                     {/* thumbnail and link to download pdf */}
                     <a href={wgu_cap} target="_blank" download="PGSBPP.pdf" rel="noopener noreferrer">

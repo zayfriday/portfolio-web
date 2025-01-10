@@ -4,16 +4,15 @@ import degree_pic from '../assets/degree_ss.png'
 
 function Qualifications() {
     return (
-        <div id="qual" className='lg:my-20 py-20 flex flex-col items-center text-slate-300 text-md lg:text-lg'>
+        <div id="qual" className='lg:my-20 py-20 flex flex-col items-center text-md lg:text-lg'>
 
-            <div className='mb-20 p-12 w-full bg-gradient-to-r from-transparent from-35% via-fuchsia-900 via-55% to-transparent to-85% 
-            border-t-2 border-b border-slate-500 border-opacity-10 rounded-lg'>
+            <div className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
                     transition={{ duration: 0.75 }}
-                    className='bg-gradient-to-r from-emerald-400 to-green-700 bg-clip-text text-transparent
-                    font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-4'>
+                    className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
+                    font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
                         Qualifications
                 </motion.h2>
             </div>
@@ -23,16 +22,23 @@ function Qualifications() {
                  whileInView={{ opacity: 1, y: 0 }} 
                  initial={{ opacity: 0, y: -100 }} 
                  transition={{ duration: 0.8 }}
-                 className='my-4 pt-4 pb-2 block
-                 bg-gradient-to-r from-emerald-400 via-fuchsia-200 to-violet-700 bg-clip-text text-transparent text-4xl lg:text-5xl font-light'>
+                 className='my-4 pt-4 pb-8 block
+                 bg-gradient-to-r from-emerald-400 via-fuchsia-200 to-violet-700 bg-clip-text text-transparent text-4xl lg:text-5xl font-thin'>
                     Education
                 </motion.h2>
 
-                <motion.img 
-                 initial={{ x: -100, opacity: 0 }}
-                 whileInView={{ x: 0, opacity: 1 }}
-                 transition={{ duration: 0.85 }}
-                 src={degree_pic} className='w-3/5 h-auto mt-6 pb-4 rounded-sm' alt='degree_pic'/>
+                <a className='relative group w-full lg:w-4/5 p-2 flex justify-center items-center'>
+                    <motion.img 
+                     initial={{ x: -100, opacity: 0 }}
+                     whileInView={{ x: 0, opacity: 1 }}
+                     transition={{ duration: 0.85 }}
+                     src={degree_pic} className='w-5/7 lg:w-5/6 h-auto mt-6 pb-4 rounded-sm' alt='degree_pic'/>
+
+                    {/* Tooltip */}
+                    <span className="absolute z-5 hidden group-hover:inline-block top-0 right-0 mt-2 bg-gray-700 py-2 px-4 text-white text-sm rounded">
+                        Click to open in new tab
+                    </span>                   
+                </a>
 
                 <motion.h3
                  initial={{ x: -100, opacity: 0 }}
@@ -63,8 +69,8 @@ function Qualifications() {
              whileInView={{ opacity: 1, y: 0 }} 
              initial={{ opacity: 0, y: -100 }} 
              transition={{ duration: 0.8 }}
-             className='my-4 py-4 block
-             bg-gradient-to-r from-emerald-400 via-fuchsia-200 to-violet-700 bg-clip-text text-transparent text-4xl lg:text-5xl font-light'>
+             className='my-4 pt-4 block pb-8
+             bg-gradient-to-r from-emerald-400 via-fuchsia-200 to-violet-700 bg-clip-text text-transparent text-4xl lg:text-5xl font-thin'>
                 Certifications
             </motion.h2>
 
