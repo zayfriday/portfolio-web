@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/sample-logo.jpeg'
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 // import { Link, Element } from 'react-scroll';

@@ -100,7 +100,6 @@ function ContactForm() {
     }
 
 
-
     return (
         <div className='pt-8'>
             <motion.div 
@@ -109,7 +108,7 @@ function ContactForm() {
              transition={{ duration: 1.5 }}
              className="flex justify-center items-center">
                 {/* Form container */}
-                <form className="border-t border-b border-slate-400 bg-transparent rounded-md p-6 w-full lg:w-3/4">
+                <form className="border-t border-b border-slate-400 bg-transparent rounded-md p-6 w-full lg:w-3/4" onSubmit={handleSubmit}>
                     <h2 className="text-4xl text-center mb-6 font-extralight
                      bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent">
                         Send a Message
