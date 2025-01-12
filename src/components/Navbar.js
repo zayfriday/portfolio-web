@@ -15,7 +15,7 @@ function Navbar() {
         <nav className='mb-20 flex items-center justify-between py-6'>
             <div className='flex flex-shrink-0 items-center'>
                 {/* <img className='mx-2 w-10' src={logo} alt="logo"/> */}
-                <ul className='flex items-center justify-around mx-2 gap-2 lg:gap-4 tracking-tighter text-lg lg:text-xl
+                <ul className='flex items-center justify-around lg:mx-2 gap-3 lg:gap-4 tracking-tighter text-lg lg:text-xl
                  bg-gradient-to-r from-green-300 to-green-700 bg-clip-text text-transparent'>
                     <motion.li>
                         <a className="hover:text-purple-500 active:text-blue-900" href="#hero">Home</a>
@@ -32,12 +32,12 @@ function Navbar() {
                 </ul>
             </div>
 
-            <div className='m-8 flex items-center justify-center gap-4 text-xl lg:text-2xl'>
+            <div className='lg:m-8 m-3 flex items-center justify-center gap-2 text-xl lg:text-2xl'>
                 <a className='hover:opacity-50 active:opacity-70' href='https://www.linkedin.com/in/ifriday' taget="_blank" rel="noopener noreferrer">
-                    <FaLinkedin />
+                    <FaLinkedin className='text-blue-700'/>
                 </a>
                 <a className='hover:opacity-50 active:opacity-70' href='https://github.com/zayfriday' taget="_blank" rel="noopener noreferrer">
-                    <FaGithub />
+                    <FaGithub className='text-neutral-700'/>
                 </a>
             </div>
         </nav>

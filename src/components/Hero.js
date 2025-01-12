@@ -1,17 +1,27 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Technologies from './Technologies';
-
-const container = (time) => ({
-    hidden: {
-        x: -100, opactiy: 0
-    },
-    visible: {
-        x: 0, opacity: 1, transition: { duration: 1, delay: time }
-    },
-});
+import { useEffect, useState } from 'react';
 
 function Hero() {
+    const [hasLoaded, setHasLoaded] = useState(false);
+
+    useEffect(() => {
+        // function to check when all page elements (images, scripts, etc.) are loaded
+        const handleLoad = () => {
+          console.log("page loaded");
+          setHasLoaded(true);
+        };
+    
+        // Add event listener to window load event
+        window.addEventListener("load", handleLoad);
+    
+        // Clean up the event listener
+        return () => {
+          window.removeEventListener("load", handleLoad);
+        };
+      }, []); // checks that all elements on page have loaded when page renders
+
     return (
         <div id="hero" className='pb-20 lg:mb-40 my-20'>
             <div className='flex flex-wrap'>
@@ -21,17 +31,17 @@ function Hero() {
                      initial={{opactiy: 0, x:-100}}
                      whileInView={{opacity: 1, x: 0}}
                      transition={{ duration: 0.5 }}
-                     viewport={{ once: true }}
-                     className='pb-16 text-6xl lg:text-8xl font-thin lg:mt-28 lg:tracking-wide text-slate-500'>
+                     viewport={{ once: true, scroll: true }}
+                     className='text-center pb-12 text-7xl lg:text-9xl font-thin mt-28 lg:tracking-wide text-slate-500'>
                         Isaiah Friday
                     </motion.h1>
                     <motion.span
-                        initial={{ x: -300, opactiy: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 1 }}
-                        viewport={{ once: true }}
-                        className='bg-gradient-to-r from-emerald-400 via-fuchsia-200 to-violet-700
-                         bg-clip-text text-3xl tracking-tight font-extralight text-transparent mb-4'>
+                     initial={{ x: -300, opactiy: 0 }}
+                     whileInView={{ x: 0, opacity: 1 }}
+                     transition={{ duration: 1 }}
+                     viewport={{ once: true }}
+                     className='bg-gradient-to-r from-emerald-400 via-fuchsia-200 to-violet-700
+                     bg-clip-text text-3xl font-extralight text-transparent pb-4 text-center'>
                         Programming & Cybersecurity
                     </motion.span>
                     <motion.div
@@ -39,7 +49,7 @@ function Hero() {
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1.3 }}
                         viewport={{ once: true }}
-                        className='my-4'>
+                        className=''>
                             <Technologies />
                     </motion.div>
                 </div>

@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"  # Command to run when building the site. It tells Netlify to run `npm run build`, which compiles the React app into static files.
+  publish = "build"  # Specifies the directory where the built files are stored. Netlify will serve files from the `build` folder.
+
+[[redirects]] #handles URL redirects. In this case, it manages the /contact route.
+  from = "/contact"  # Specifies that when users visit `/contact` URL, they will be redirected to the index page.
+  to = "/index.html"  # The page the user is redirected to (in this case, the homepage of your app).
+  status = 200  # This indicates that the redirection is a successful request (status code 200). It essentially tells the browser that the request is handled successfully.
+  force = true  # Forces the redirect even if the user tries to access the URL directly (ensuring it always goes to the homepage).

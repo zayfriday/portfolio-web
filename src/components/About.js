@@ -20,7 +20,11 @@ function About() {
     return (
         <div id="about" className='flex flex-col lg:my-20 py-20 text-slate-400 tracking-tight'>
 
-            <div className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+            <motion.div 
+             whileInView={{ opacity: 1, y: 0 }}
+             initial={{ opacity: 0, y: -100 }}
+             transition={{ duration: 0.5 }}
+             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
@@ -29,7 +33,7 @@ function About() {
                     font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
                         Who am I?
                 </motion.h2>
-            </div>
+            </motion.div>
 
             <div className='flex flex-wrap flex-row-reverse my-4 justify-center lg:justify-start items-start text-md lg:text-lg'>
                 {/* Picture div */}
@@ -60,7 +64,7 @@ function About() {
                         initial={{ x: -300, opacity: 0}} 
                         whileInView={{ x: 0, opacity: 1}}
                         transition={{ duration: 1 }}
-                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
+                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors text-left'
                         onClick={readMoreBtn1}>
                             Click here if you want to read more about my story
                         </motion.button>

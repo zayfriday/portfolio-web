@@ -6,7 +6,11 @@ function Qualifications() {
     return (
         <div id="qual" className='lg:my-20 py-20 flex flex-col items-center text-md lg:text-lg'>
 
-            <div className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+            <motion.div 
+             whileInView={{ opacity: 1, y: 0 }}
+             initial={{ opacity: 0, y: -100 }}
+             transition={{ duration: 0.5 }}
+             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
@@ -15,7 +19,7 @@ function Qualifications() {
                     font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
                         Qualifications
                 </motion.h2>
-            </div>
+            </motion.div>
 
             <div className='w-full flex flex-col items-center text-center pb-10'>
                 <motion.h2
@@ -35,9 +39,9 @@ function Qualifications() {
                      src={degree_pic} className='w-5/7 lg:w-5/6 h-auto mt-6 pb-4 rounded-sm' alt='degree_pic'/>
 
                     {/* Tooltip */}
-                    <span className="absolute z-5 hidden group-hover:inline-block top-0 right-0 mt-2 bg-gray-700 py-2 px-4 text-white text-sm rounded">
+                    {/* <span className="absolute z-5 hidden group-hover:inline-block top-0 right-0 mt-2 bg-gray-700 py-2 px-4 text-white text-sm rounded">
                         Click to open in new tab
-                    </span>                   
+                    </span>                    */}
                 </a>
 
                 <motion.h3

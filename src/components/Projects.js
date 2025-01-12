@@ -9,7 +9,11 @@ function Projects() {
     return (
         <div id="projects" className='flex flex-col items-start lg:my-20 py-20 text-slate-400'>
 
-            <div className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+            <motion.div 
+             whileInView={{ opacity: 1, y: 0 }}
+             initial={{ opacity: 0, y: -100 }}
+             transition={{ duration: 0.5 }}
+             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
                 <motion.h2
                  whileInView={{ opacity: 1, y: 0 }}
                  initial={{ opacity: 0, y: -100 }}
@@ -18,7 +22,7 @@ function Projects() {
                  font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
                     Projects
                 </motion.h2>
-            </div>
+            </motion.div>
 
 
             {/* PROGRAMMING HEADER */}
