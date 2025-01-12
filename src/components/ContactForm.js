@@ -76,8 +76,8 @@ function ContactForm() {
             setStatus("Failed to send emails. Please try again.");
           }
         } catch (error) {
-          console.error("Error:", error);
-          setStatus("An error occurred. Please try again.");
+            console.error("Error:", error);
+            setStatus("An error occurred. Please try again.");
         }
 
         //   // Handle the server's response
@@ -164,6 +164,7 @@ function ContactForm() {
                         >
                             Submit
                         </button>
+                        { error && <p className='py-3 text-lg text-red-500'></p>}
                     </div>
                 </form>
             </motion.div>

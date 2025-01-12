@@ -59,6 +59,7 @@ exports.handler = async function (event, context) {
       return {
         statusCode: 500,
         body: JSON.stringify({ error: error.message }),  // Error response with details
+        body: JSON.stringify({ error: "custom error message" }),
       };
     }
   }

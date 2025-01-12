@@ -33,7 +33,7 @@ function Contact() {
                 </motion.p>
             </div>
 
-            <ContactForm />
+            {/* <ContactForm /> */}
         </div>
     )
 }
