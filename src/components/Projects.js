@@ -7,18 +7,18 @@ import mcjm_pic from '../assets/MCJM_thumb.png'
 
 function Projects() {
     return (
-        <div id="projects" className='flex flex-col items-start lg:my-20 py-20 text-slate-400'>
+        <div id="projects" className='flex flex-col items-start lg:my-20 lg:py-20 pb-30 text-slate-400'>
 
-            <motion.div 
-             whileInView={{ opacity: 1, y: 0 }}
-             initial={{ opacity: 0, y: -100 }}
-             transition={{ duration: 0.5 }}
-             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+            <motion.div
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 0.5 }}
+                className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
                 <motion.h2
-                 whileInView={{ opacity: 1, y: 0 }}
-                 initial={{ opacity: 0, y: -100 }}
-                 transition={{ duration: 0.5 }}
-                 className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
+                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: -100 }}
+                    transition={{ duration: 0.5 }}
+                    className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
                  font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
                     Projects
                 </motion.h2>
@@ -30,7 +30,7 @@ function Projects() {
                 whileInView={{ opacity: 1, y: 0, x: 0 }}
                 initial={{ opacity: 0, y: -50, x: -200 }}
                 transition={{ duration: 0.8 }}
-                className='block text-left px-4 py-6 mt-8 text-5xl font-extralight
+                className='block text-left px-4 py-6 mt-8 text-4xl lg:text-5xl font-extralight
                  bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent'>
                 Programming
             </motion.h2>
@@ -43,10 +43,14 @@ function Projects() {
                     transition={{ duration: 1 }}
                     whileHover={{ scale: 1.05, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
-                    className='relative my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    className='relative group my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'>
+                    <a>
                         <img className='rounded-[10px] w-full h-auto lg:min-h-72 object-fill' src={mcjm_pic} alt="mcjm_thumnail" />
                     </a>
+                    {/* Tooltip */}
+                    <span className="absolute z-5 hidden group-hover:inline-block top-2/5 left-1/2 bg-gray-700 py-2 px-4 text-white text-sm rounded">
+                        Website currently unavailable
+                    </span>
                 </motion.div>
                 {/* info div */}
                 <motion.div
@@ -81,7 +85,7 @@ function Projects() {
                 whileInView={{ opacity: 1, y: 0, x: 0 }}
                 initial={{ opacity: 0, y: -50, x: -200 }}
                 transition={{ duration: 0.8 }}
-                className='block text-left px-4 py-6 mt-8 text-5xl font-extralight
+                className='block text-left px-4 py-6 mt-8 text-4xl lg:text-5xl font-extralight
                  bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent'>
                 Cybersecurity
             </motion.h2>

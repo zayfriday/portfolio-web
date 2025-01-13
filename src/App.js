@@ -29,11 +29,10 @@ function App() {
         <About />
         <Qualifications />
         <Projects />
-
         <Contact />
       </div>
 
-      <div className='py-4'>
+      <div className='flex flex-col'>
         <Footer />
       </div>
     </div>

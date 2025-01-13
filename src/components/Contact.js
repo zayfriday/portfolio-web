@@ -5,7 +5,7 @@ import ContactForm from './ContactForm.js';
 function Contact() {
 
     return (
-        <div id="contact" className='flex flex-col mt-10 lg:mt-20 pt-10 pb-4'>
+        <div id="contact" className='flex flex-col mt-10 lg:mt-20 pt-10 pb-14 lg:pb-20 '>
 
             <motion.div 
              whileInView={{ opacity: 1, y: 0 }}
@@ -23,13 +23,20 @@ function Contact() {
             </motion.div>
 
             {/* for small devices it stacks elements, for lg devices it spaces them evenly horizontally */}
-            <div className='flex flex-wrap justify-evenly text-2xl font-light tracking-tight w-full gap-2 pt-2 mt-10'>
+            <div className='flex flex-wrap justify-evenly text-xl lg:text-2xl font-light tracking-tight w-full gap-2 lg:pt-2 mt-10'>
                 <motion.p 
                  whileInView={{ opacity: 1, x: 0 }} 
                  initial={{ opacity: 0, x: -100 }} 
                  transition={{ duration: 1 }}
                  className='p-2'>
-                    By email: <a>zayfriday1@gmail.com</a>
+                    <a> zayfriday1@gmail.com</a>
+                </motion.p>
+                <motion.p 
+                 whileInView={{ opacity: 1, x: 0 }} 
+                 initial={{ opacity: 0, x: -100 }} 
+                 transition={{ duration: 1 }}
+                 className='p-2'>
+                    <a>(313)701-4232</a>
                 </motion.p>
             </div>
 

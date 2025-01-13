@@ -18,7 +18,7 @@ function About() {
 
 
     return (
-        <div id="about" className='flex flex-col lg:my-20 py-20 text-slate-400 tracking-tight'>
+        <div id="about" className='flex flex-col lg:my-20 pb-30 lg:py-20  text-slate-400 tracking-tight'>
 
             <motion.div 
              whileInView={{ opacity: 1, y: 0 }}
@@ -31,118 +31,122 @@ function About() {
                     transition={{ duration: 0.75 }}
                     className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
                     font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
-                        Who am I?
+                        About Me
                 </motion.h2>
             </motion.div>
 
             <div className='flex flex-wrap flex-row-reverse my-4 justify-center lg:justify-start items-start text-md lg:text-lg'>
                 {/* Picture div */}
-                <div className='flex w-full my-auto lg:w-2/5 lg:pl-4 lg:pr-2 items-center justify-center'>
+                <div className='flex w-full lg:w-2/5 p-2 lg:pl-4 lg:pr-2 items-center justify-center'>
                     <motion.img 
                      initial={{ x: 300, opacity: 0}} 
                      whileInView={{ x: 0, opacity: 1}}
                      transition={{ duration: 1 }}
-                     className='my-4 lg:mt-2 lg:mb-10 rounded-2xl w-9/10 h-auto' src={pfp} alt="profile_pic" />
+                     className='lg:mt-12 rounded-xl w-9/10 h-auto' src={pfp} alt="profile_pic" />
                 </div>
-
+                
                 {/* Bio div */}
                 <motion.div className='w-full flex flex-col lg:w-3/5 px-4'>
+                    <motion.h3 
+                     initial={{ x: -300, opacity: 0}} 
+                     whileInView={{ x: 0, opacity: 1}}
+                     transition={{ duration: 0.75 }} 
+                     className='block lg:text-left py-6 text-4xl lg:text-5xl font-extralight 
+                     bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent'>
+                        Who am I?
+                    </motion.h3>
                     <motion.p 
                     initial={{ x: -300, opacity: 0}} 
                     whileInView={{ x: 0, opacity: 1}}
                     transition={{ duration: 1 }}
-                    className='pb-6'>
-                        I’m a recent cybersecurity graduate and an independent web developer. I have a BS in Cybersecurity & Information Assurance 
-                        from Western Governors University and over seven industry recognized certifications in the IT field including 
-                        the CompTIA Security+, Network+, CySA+ and more. 
+                    className='pb-6 pl-1'>
+                        I’m an independent web developer with a BS in Cybersecurity & Information Assurance from Western Governors University. 
+                        With over 2 years of experience in IT and a strong passion for continuous learning, I am dedicated to deepening my knowledge 
+                        and enhancing my ability to deliver versatile and efficient tech solutions. 
                     </motion.p>
 
-                    {/* readmore1 conditional view */}
-                    {!readMore1 ? 
-                    (<div>
-                        <motion.button
+                    <motion.p 
+                    initial={{ x: -300, opacity: 0}} 
+                    whileInView={{ x: 0, opacity: 1}}
+                    transition={{ duration: 1 }}
+                    className='pb-6 pl-1'>
+                        I hold several professional certifications in the operation, maintenance, and security of computer systems (view them here). 
+                        This expertise guides and underpins the development of all my websites, ensuring that industry-leading security practices are integrated at every phase, 
+                        from concept to launch.   
+                    </motion.p>
+
+
+                    <div>
+                        <motion.h3 
+                         initial={{ x: -300, opacity: 0}} 
+                         whileInView={{ x: 0, opacity: 1}}
+                         transition={{ duration: 1 }} 
+                         className='block lg:text-left py-6 text-4xl lg:text-5xl font-extralight 
+                         bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent'>
+                            Cybersecurity
+                        </motion.h3>
+
+                        <motion.p
                         initial={{ x: -300, opacity: 0}} 
                         whileInView={{ x: 0, opacity: 1}}
                         transition={{ duration: 1 }}
-                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors text-left'
-                        onClick={readMoreBtn1}>
-                            Click here if you want to read more about my story
-                        </motion.button>
-                    </div>) : 
-                    (<div>
-                        <motion.p 
-                        initial={{ opacity: 0, scale: 0}}
-                        animate={{ opacity: 1, scale: 1}}
-                        transition={{ duration: 0.3, ease: "easeInOut"}}
-                         className='pb-2'>
-                            Tell my background story of how I got into tech and stuff.
+                        className='pb-6 pl-1'>
+                            Currently, I am seeking an entry-level role in the IT field (anywhere from cybersecurity to software engineering roles). 
+                            I’m looking for an opportunity to apply, and improve upon, my knowledge and skills. My most valuable assets are 
+                            my ability to learn and adapt quickly to new situations and develop creative and efficient methods to complete goals successfully.
+                            My technical experience consists of:
                         </motion.p>
 
-                        <motion.button
-                        initial={{ opacity: 0, scale: 0}}
-                        animate={{ opacity: 1, scale: 1}}
-                        transition={{ duration: 0.3, ease: "easeInOut"}}
-                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
-                        onClick={readMoreBtn1}>
-                            Show less
-                        </motion.button>
-                    </div>)}
+                        <motion.ul 
+                         initial={{ x: -300, opacity: 0}} 
+                         whileInView={{ x: 0, opacity: 1}}
+                         transition={{ duration: 1.2 }}
+                         className='pl-4 pb-1 text-base tracking-tighter text-slate-500 italic'>
+                            <li className='pb-3'>
+                                Developing and implementing a comprehensive risk management solution to avoid a common vulnerability for enterprises.
+                            </li>
+                            <li className='pb-3'>
+                                Developing and implementing automation scripts to improve enterprise efficiency and security.                            
+                            </li>
+                            <li className='pb-3'>
+                                Using nmap and wireshark to scan and monitor a network, identifying vulnerabilities and offering solutions in accordance with industry-standards.                            
+                            </li>
+                            <li className='pb-3'>
+                                Performing simulated penetration tests and successfully exploiting vulnerable web applications using Hack The Box platform. Link
+                            </li>
+                        </motion.ul>
 
-                    <motion.p 
-                    initial={{ x: -300, opacity: 0}} 
-                    whileInView={{ x: 0, opacity: 1}}
-                    transition={{ duration: 1 }}
-                    className=' my-4'>
-                        I’ve recently begun freelance work, developing full-stack websites for clients. If you’re interested, 
-                        check out my Fiverr here, look at some of my previous work&nbsp;
-                        <a href="#cyber-proj" className=' text-purple-700 hover:text-blue-600 active:text-blue-900 
-                        transition-colors duration-150'>here</a>, or contact me&nbsp;
-                        <a href="#contact" className=' text-purple-700 hover:text-blue-600 active:text-blue-900 
-                        transition-colors duration-150'>here.</a>
-                    </motion.p>
+                        <motion.p
+                         initial={{ x: -300, opacity: 0}} 
+                         whileInView={{ x: 0, opacity: 1}}
+                         transition={{ duration: 1 }}
+                         className='pb-6 pl-1'>
+                            Check out the Cybersecurity projects section for (...).
+                        </motion.p>
+                    </div>
 
-                    {/* readmore2 conditional view */}
-                    {!readMore2 ? 
-                    (<div>
-                        <motion.button
-                        initial={{opacity: 0}} 
+                    <div className='py-4'>
+                        <motion.h3 
+                         initial={{ x: -300, opacity: 0}} 
+                         whileInView={{ x: 0, opacity: 1}}
+                         transition={{ duration: 0.75 }} 
+                         className='block lg:text-left py-6 text-4xl lg:text-5xl font-extralight 
+                         bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent'>
+                            Programming
+                        </motion.h3>
+
+                        <motion.p
+                        initial={{ x: -300, opacity: 0}} 
                         whileInView={{ x: 0, opacity: 1}}
                         transition={{ duration: 1 }}
-                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
-                        onClick={readMoreBtn2}>
-                            Read more
-                        </motion.button>
-                    </div>) : 
-                    (<div>
-                        <motion.p 
-                        initial={{ opacity: 0, scale: 0}}
-                        animate={{ opacity: 1, scale: 1}}
-                        transition={{ duration: 0.3, ease: "easeInOut"}}
-                        className='pb-2'>
-                            More about skills and xp.
+                        className='pb-6 pl-1'>
+                            Web development is my passion, and I am continuously seeking opportunities to enhance my skills and deliver even more refined solutions. 
+                            If you’re looking to transform your ideas into a seamless online experience, contact me (here) or check out my Fiverr profile (here). 
+                            You can take a look at some of my completed projects (here). 
                         </motion.p>
-
-                        <motion.button
-                        initial={{ opacity: 0, scale: 0}}
-                        animate={{ opacity: 1, scale: 1}}
-                        transition={{ duration: 0.3, ease: "easeInOut"}}
-                        className='pb-2 text-slate-500 duration-200 ease-in-out hover:text-slate-800 transition-colors'
-                        onClick={readMoreBtn2}>
-                            Show less
-                        </motion.button>
-                    </div>)}
-
-                    <motion.p 
-                    initial={{ x: -100, opacity: 0}} 
-                    whileInView={{ x: 0, opacity: 1}}
-                    transition={{ duration: 1 }}
-                    className='my-4'>
-                        I’m currently seeking an entry level role in the computer/IT field. I have skills and experience with software 
-                        that is commonly used within the industry. Check out some projects that display this here.
-                    </motion.p>
+                    </div>
                 </motion.div>
             </div>
-
         </div>
     )
 }

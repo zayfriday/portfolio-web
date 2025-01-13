@@ -1,6 +1,6 @@
 import React from 'react'
 import { RiReactjsLine } from 'react-icons/ri'
-import { SiGnubash, SiFirebase, SiNetlify, SiTailwindcss } from 'react-icons/si'
+import { SiFirebase, SiNetlify, SiTailwindcss } from 'react-icons/si'
 import { motion } from "framer-motion"
 
 const iconVariants = (time) => ({

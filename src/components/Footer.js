@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='py-4 mx-4 flex flex-col'>
-        <p className='mx-4 text-right tracking-tighter text-sm'> @ 2024, Created by Isaiah Friday </p>
+    <div className='w-screen bg-fuchsia-800 bg-opacity-15 py-10 flex flex-col items-center'>
+        <p className='pt-2 pb-8 tracking-tighter text-sm'> @ 2024, Created by Isaiah Friday </p>
     </div>
   )
 }
