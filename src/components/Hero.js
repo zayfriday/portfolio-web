@@ -28,7 +28,7 @@ function Hero() {
 
                 <div className='w-full flex flex-col items-center'>
                     <motion.h1
-                     initial={{opactiy: 0, x:-100}}
+                     initial={{opactiy: 0, x:-300}}
                      animate={{opacity: 1, x: 0}}
                      transition={{ duration: 0.5 }}
                      viewport={{ once: true, scroll: true }}
@@ -38,7 +38,7 @@ function Hero() {
                     <motion.span
                      initial={{ x: -300, opactiy: 0 }}
                      animate={{ x: 0, opacity: 1 }}
-                     transition={{ duration: 1 }}
+                     transition={{ duration: 0.75 }}
                      viewport={{ once: true }}
                      className='bg-gradient-to-r from-emerald-400 via-fuchsia-200 to-violet-700
                      bg-clip-text text-3xl font-extralight text-transparent pb-4 text-center'>
@@ -47,7 +47,7 @@ function Hero() {
                     <motion.div
                         initial={{ x: -300, opactiy: 0 }}
                         animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 1.3 }}
+                        transition={{ duration: 1 }}
                         viewport={{ once: true }}
                         className=''>
                             <Technologies />

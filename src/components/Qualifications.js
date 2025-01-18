@@ -10,7 +10,7 @@ function Qualifications() {
              whileInView={{ opacity: 1, y: 0 }}
              initial={{ opacity: 0, y: -100 }}
              transition={{ duration: 0.5 }}
-             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-5'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
@@ -31,7 +31,7 @@ function Qualifications() {
                     Education
                 </motion.h4>
 
-                <a className='relative group w-full lg:w-4/5 p-2 flex justify-center items-center'>
+                <a id="degree" className='relative group w-full lg:w-4/5 p-2 flex justify-center items-center'>
                     <motion.img 
                      initial={{ x: -100, opacity: 0 }}
                      whileInView={{ x: 0, opacity: 1 }}
@@ -67,7 +67,7 @@ function Qualifications() {
                 </motion.p>
             </div>
 
-            <motion.div className='w-full border-b border-slate-700 border-opacity-50 my-4' /> 
+            <motion.div id="certs" className='w-full border-b border-slate-700 border-opacity-50 py-2' /> 
 
             {/* Certifications view, 2 columns for lg screen, 1 for smaller  */}
             <motion.h4 
@@ -79,9 +79,8 @@ function Qualifications() {
                     Certifications
             </motion.h4>
 
-            <div className='w-full lg:w-4/7 flex flex-wrap px-4 py-2'>
-                
-                <div className='w-full lg:w-1/2 flex flex-col pb-4 items-center text-center p-2'>
+            <div className='w-full lg:w-4/7 flex flex-wrap px-2 py-2'>
+                <div className='w-full lg:w-1/2 flex flex-col pb-4 items-center text-center'>
                     <motion.h4
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
@@ -97,7 +96,6 @@ function Qualifications() {
                         Nov 2024
                     </motion.p>
                 </div>
-
                 <div className='w-full lg:w-1/2 text-lg flex flex-col pb-4 items-center p-2'>
                     <motion.h4
                         initial={{ x: -100, opacity: 0 }}
@@ -114,7 +112,6 @@ function Qualifications() {
                         Sep 2024
                     </motion.p>
                 </div>
-
                 <div className='w-full lg:w-1/2 text-lg flex flex-col pb-4 items-center p-2'>
                     <motion.h4
                         initial={{ x: -100, opacity: 0 }}
@@ -131,13 +128,12 @@ function Qualifications() {
                         Aug 2024
                     </motion.p>
                 </div>
-
                 <div className='w-full lg:w-1/2 flex flex-col pb-4 items-center text-center p-2'>
                     <motion.h4
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
-                        className='text-xl'>
+                        className='text-lg'>
                             <a className='text-slate-600 italic tracking-tight'>Linux Profesional Institute, </a> Linux Essentials
                     </motion.h4>
                     <motion.p
@@ -148,64 +144,60 @@ function Qualifications() {
                         May 2024
                     </motion.p>
                 </div>
-
                 <div className='w-full lg:w-1/2 text-lg flex flex-col pb-4 items-center p-2'>
                     <motion.h4
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         className='text-lg'>
-                       <a className='text-gray-600 italic'>CompTIA, </a>Security+
+                            <a className='text-gray-600 italic'>CompTIA, </a>Security+
                     </motion.h4>
                     <motion.p
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1.2 }}
                         className='tracking-tighter text-sm text-gray-700'>
-                        May 2024
+                            May 2024
                     </motion.p>
                 </div>
-
                 <div className='w-full lg:w-1/2 text-lg flex flex-col pb-4 items-center p-2'>
                     <motion.h4
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         className='text-lg'>
-                       <a className='text-gray-600 italic'>CompTIA, </a>Network+
+                            <a className='text-gray-600 italic'>CompTIA, </a>Network+
                     </motion.h4>
                     <motion.p
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1.2 }}
                         className='tracking-tighter text-sm text-gray-700'>
-                        Dec 2023
+                            Dec 2023
                     </motion.p>
                 </div>
-
                 <div className='w-full lg:w-1/2 text-lg flex flex-col pb-4 items-center p-2'>
                     <motion.h4
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         className='text-lg'>
-                       <a className='text-gray-600 italic'>CompTIA, </a>A+
+                            <a className='text-gray-600 italic'>CompTIA, </a>A+
                     </motion.h4>
                     <motion.p
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1.2 }}
                         className='tracking-tighter text-sm text-gray-700'>
-                        Aug 2023
+                            Aug 2023
                     </motion.p>
-
                     <div className='w-full lg:w-1/2 text-lg flex flex-col pb-4 items-center p-2'>
                         <motion.h4
                             initial={{ x: -100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1 }}
                             className='text-lg'>
-                       <a className='text-gray-600 italic'>Axelos, </a>ITIL Foundation
+                                <a className='text-gray-600 italic tracking-tight'>Axelos, </a>ITIL Foundation
                         </motion.h4>
                         <motion.p
                             initial={{ x: -100, opacity: 0 }}

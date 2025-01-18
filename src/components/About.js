@@ -24,7 +24,7 @@ function About() {
              whileInView={{ opacity: 1, y: 0 }}
              initial={{ opacity: 0, y: -100 }}
              transition={{ duration: 0.5 }}
-             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-5'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
@@ -41,7 +41,7 @@ function About() {
                     <motion.img 
                      initial={{ x: 300, opacity: 0}} 
                      whileInView={{ x: 0, opacity: 1}}
-                     transition={{ duration: 1 }}
+                     transition={{ duration: .75 }}
                      className='lg:mt-12 rounded-xl w-9/10 h-auto' src={pfp} alt="profile_pic" />
                 </div>
                 
@@ -50,7 +50,7 @@ function About() {
                     <motion.h3 
                      initial={{ x: -300, opacity: 0}} 
                      whileInView={{ x: 0, opacity: 1}}
-                     transition={{ duration: 0.75 }} 
+                     transition={{ duration: 0.5 }} 
                      className='block lg:text-left py-6 text-4xl lg:text-5xl font-extralight 
                      bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent'>
                         Who am I?
@@ -58,7 +58,7 @@ function About() {
                     <motion.p 
                     initial={{ x: -300, opacity: 0}} 
                     whileInView={{ x: 0, opacity: 1}}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: .5 }}
                     className='pb-6 pl-1'>
                         I’m an independent web developer with a BS in Cybersecurity & Information Assurance from Western Governors University. 
                         With over 2 years of experience in IT and a strong passion for continuous learning, I am dedicated to deepening my knowledge 
@@ -68,9 +68,10 @@ function About() {
                     <motion.p 
                     initial={{ x: -300, opacity: 0}} 
                     whileInView={{ x: 0, opacity: 1}}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: .5 }}
                     className='pb-6 pl-1'>
-                        I hold several professional certifications in the operation, maintenance, and security of computer systems (view them here). 
+                        I hold several professional certifications in the operation, maintenance, and security of computer systems 
+                        <a href="#certs" className='text-indigo-600 hover:text-indigo-900'> (view them here). </a> 
                         This expertise guides and underpins the development of all my websites, ensuring that industry-leading security practices are integrated at every phase, 
                         from concept to launch.   
                     </motion.p>
@@ -80,7 +81,7 @@ function About() {
                         <motion.h3 
                          initial={{ x: -300, opacity: 0}} 
                          whileInView={{ x: 0, opacity: 1}}
-                         transition={{ duration: 1 }} 
+                         transition={{ duration: .5 }} 
                          className='block lg:text-left py-6 text-4xl lg:text-5xl font-extralight 
                          bg-gradient-to-r from-green-400 via-fuchsia-200 to-green-700 bg-clip-text text-transparent'>
                             Cybersecurity
@@ -89,7 +90,7 @@ function About() {
                         <motion.p
                         initial={{ x: -300, opacity: 0}} 
                         whileInView={{ x: 0, opacity: 1}}
-                        transition={{ duration: 1 }}
+                        transition={{ duration: .5 }}
                         className='pb-6 pl-1'>
                             Currently, I am seeking an entry-level role in the IT field (anywhere from cybersecurity to software engineering roles). 
                             I’m looking for an opportunity to apply, and improve upon, my knowledge and skills. My most valuable assets are 
@@ -100,7 +101,7 @@ function About() {
                         <motion.ul 
                          initial={{ x: -300, opacity: 0}} 
                          whileInView={{ x: 0, opacity: 1}}
-                         transition={{ duration: 1.2 }}
+                         transition={{ duration: .6 }}
                          className='pl-4 pb-1 text-base tracking-tighter text-slate-500 italic'>
                             <li className='pb-3'>
                                 Developing and implementing a comprehensive risk management solution to avoid a common vulnerability for enterprises.
@@ -119,9 +120,9 @@ function About() {
                         <motion.p
                          initial={{ x: -300, opacity: 0}} 
                          whileInView={{ x: 0, opacity: 1}}
-                         transition={{ duration: 1 }}
+                         transition={{ duration: .5 }}
                          className='pb-6 pl-1'>
-                            Check out the Cybersecurity projects section for (...).
+                            Check out the <a href="#cyber-proj" className='text-indigo-600 hover:text-indigo-900'> Cybersecurity projects </a> section for more details.
                         </motion.p>
                     </div>
 
@@ -138,11 +139,13 @@ function About() {
                         <motion.p
                         initial={{ x: -300, opacity: 0}} 
                         whileInView={{ x: 0, opacity: 1}}
-                        transition={{ duration: 1 }}
+                        transition={{ duration: .5 }}
                         className='pb-6 pl-1'>
                             Web development is my passion, and I am continuously seeking opportunities to enhance my skills and deliver even more refined solutions. 
-                            If you’re looking to transform your ideas into a seamless online experience, contact me (here) or check out my Fiverr profile (here). 
-                            You can take a look at some of my completed projects (here). 
+                            If you’re looking to transform your ideas into a seamless online experience, contact me 
+                            <a href="#contact" className='text-indigo-600 hover:text-indigo-900'> here. </a> 
+                            You can take a look at some of my completed projects 
+                            <a href="#web-proj" className='text-indigo-600 hover:text-indigo-900'> here.</a> 
                         </motion.p>
                     </div>
                 </motion.div>

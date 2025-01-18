@@ -11,7 +11,7 @@ function Contact() {
              whileInView={{ opacity: 1, y: 0 }}
              initial={{ opacity: 0, y: -100 }}
              transition={{ duration: 0.5 }}
-             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-5'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
@@ -29,14 +29,7 @@ function Contact() {
                  initial={{ opacity: 0, x: -100 }} 
                  transition={{ duration: 1 }}
                  className='p-2'>
-                    <a> zayfriday1@gmail.com</a>
-                </motion.p>
-                <motion.p 
-                 whileInView={{ opacity: 1, x: 0 }} 
-                 initial={{ opacity: 0, x: -100 }} 
-                 transition={{ duration: 1 }}
-                 className='p-2'>
-                    <a>(313)701-4232</a>
+                    Email me <a href="mailto:ifridayauto@zoho.com" className='text-indigo-600 hover:text-indigo-900'> @ifridayauto@zoho.com</a>
                 </motion.p>
             </div>
 

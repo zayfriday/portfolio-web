@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import logo from '../assets/sample-logo.jpeg'
 import wgu_cap from '../assets/PGSBPP.pdf'
 import wgu_cap_pic from '../assets/PGSBPP_thumb.png'
-import mcjm_pic from '../assets/MCJM_thumb.png'
+import mcjm_pic from '../assets/newMCJM-thumb.png'
 
 function Projects() {
     return (
@@ -13,7 +13,7 @@ function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-                className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-15'>
+                className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-5'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
@@ -90,7 +90,7 @@ function Projects() {
                 Cybersecurity
             </motion.h2>
 
-            <div id="web-proj" className='flex flex-wrap items-start justify-center lg:justify-start'>
+            <div id="cyber-proj" className='flex flex-wrap items-start justify-center lg:justify-start'>
                 {/* picture div */}
                 <motion.div
                     whileInView={{ opacity: 1, x: 0 }}
