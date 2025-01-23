@@ -126,9 +126,7 @@ function About() {
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: .5 }}
                             className='pb-6 pl-1'>
-                            In addition to IT, I also have exprience with independent web development. 
-                            This is a passion, and I am continuously seeking opportunities to enhance my skills and deliver even more refined solutions.
-                            My experience includes:
+                            In addition to IT, I also have exprience with independent web development. This includes:
                         </motion.p>
 
                         <motion.ul
@@ -144,7 +142,7 @@ function About() {
                                 Using framer motion to animate designs, further enhancing the user experience.
                             </li>
                             <li className='pb-3'>
-                                Utilizing Nmapm, Nikto, OWASP ZAP, and other scanning tools to test and enhance the security of
+                                Utilizing Nmap, Nikto, OWASP ZAP, and other scanning tools to test and enhance the security of
                                 wesbites.
                             </li>
                         </motion.ul>
