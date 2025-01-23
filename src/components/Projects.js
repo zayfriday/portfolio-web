@@ -8,21 +8,17 @@ import mcjm_pic from '../assets/newMCJM-thumb.png'
 function Projects() {
     return (
         <div id="projects" className='flex flex-col items-start lg:my-20 lg:py-20 pb-30 text-slate-400'>
-
-            <motion.div
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
-                transition={{ duration: 0.5 }}
-                className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-5'>
+            
+            <div className='w-full flex justify-center justify-self-center'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
-                    transition={{ duration: 0.5 }}
-                    className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
-                 font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
-                    Projects
+                    transition={{ duration: 0.75 }}
+                    className='bg-gradient-to-r from-violet-700 from-40% to-purple-400 to-55% bg-clip-text text-transparent
+                    font-semibold text-center text-5xl lg:text-6xl tracking-wide p-2 my-8'>
+                        Projects
                 </motion.h2>
-            </motion.div>
+            </div>
 
 
             {/* PROGRAMMING HEADER */}
@@ -101,7 +97,7 @@ function Projects() {
                     className='relative group my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'>
                     {/* thumbnail and link to download pdf */}
                     <a href={wgu_cap} target="_blank" download="PGSBPP.pdf" rel="noopener noreferrer">
-                        <img className='rounded-[10px] w-full min-h-72 max-h-112 object-fill' src={wgu_cap_pic} alt="cap_proj_thumb" />
+                        <img className='rounded-[10px] w-full min-h-72 max-h-112 object-cover' src={wgu_cap_pic} alt="cap_proj_thumb" />
                     </a>
 
                     {/* Tooltip */}

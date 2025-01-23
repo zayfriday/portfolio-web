@@ -1,25 +1,21 @@
 import React from 'react'
-import { easeInOut, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import degree_pic from '../assets/degree_ss.png'
 
 function Qualifications() {
     return (
         <div id="qual" className='lg:mt-20 pb-10 lg:pb-20 flex flex-col items-center text-base lg:text-lg'>
 
-            <motion.div 
-             whileInView={{ opacity: 1, y: 0 }}
-             initial={{ opacity: 0, y: -100 }}
-             transition={{ duration: 0.5 }}
-             className='self-center mb-4 p-10 w-screen bg-indigo-700 bg-opacity-5'>
+            <div className='w-full flex justify-center justify-self-center'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
                     transition={{ duration: 0.75 }}
-                    className='bg-gradient-to-r from-emerald-400 from-50% via-slate-400 via-60% to-green-700 to-70% bg-clip-text text-transparent
-                    font-thin text-center text-5xl lg:text-6xl tracking-wide my-auto p-2'>
+                    className='bg-gradient-to-r from-violet-700 from-40% to-purple-400 to-55% bg-clip-text text-transparent
+                    font-semibold text-center text-5xl lg:text-6xl tracking-wide p-2 my-8'>
                         Qualifications
                 </motion.h2>
-            </motion.div>
+            </div>
 
             <div className='w-full flex flex-col items-center text-center pb-5'>
                 <motion.h4 

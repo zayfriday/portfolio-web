@@ -1,6 +1,6 @@
 import React from 'react'
 import { RiReactjsLine } from 'react-icons/ri'
-import { SiFirebase, SiNetlify, SiTailwindcss } from 'react-icons/si'
+import { SiFirebase, SiNextdotjs , SiTailwindcss } from 'react-icons/si'
 import { motion } from "framer-motion"
 
 const iconVariants = (time) => ({
@@ -49,7 +49,7 @@ function Technologies() {
              animate="animate" 
              whileInView={{ opacity: 1, x: 0}} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1}}
              className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <SiNetlify className='text-4xl text-cyan-600'/>
+                <SiNextdotjs className='text-4xl text-slate-400'/>
             </motion.div>
         </div>
     </div>
