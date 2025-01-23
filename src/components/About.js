@@ -7,7 +7,7 @@ function About() {
 
 
     return (
-        <div id="about" className='flex flex-col lg:my-20 pb-30 lg:py-20  text-slate-400 tracking-tight'>
+        <div id="about" className='flex flex-col lg:my-20 pb-30 lg:py-20 text-slate-400 tracking-tight'>
 
             <div className='w-full flex justify-center justify-self-center'>
                 <motion.h2
@@ -20,7 +20,7 @@ function About() {
                 </motion.h2>
             </div>
 
-            <div className='flex flex-wrap flex-row-reverse my-4 justify-center lg:justify-start items-start text-md lg:text-lg'>
+            <div className='flex flex-wrap flex-row-reverse my-4 justify-center lg:justify-start items-start text-lg lg:text-lg'>
                 {/* Picture div */}
                 <div className='flex w-full lg:w-2/5 p-2 lg:pl-4 lg:pr-2 items-center justify-center'>
                     <motion.img
@@ -87,7 +87,7 @@ function About() {
                             initial={{ x: -300, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: .6 }}
-                            className='pl-4 pb-1 tracking-tighter text-slate-500 italic'>
+                            className='pl-4 pb-1 tracking-tighter text-slate-500 italic font-bold'>
                             <li className='pb-3'>
                                 Developing and implementing a comprehensive risk management solution to avoid a common vulnerability for enterprises.
                             </li>
@@ -133,7 +133,7 @@ function About() {
                             initial={{ x: -300, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: .6 }}
-                            className='pl-4 pb-1 tracking-tighter text-slate-500 italic'>
+                            className='pl-4 pb-1 tracking-tighter font-bold text-slate-500 italic'>
                             <li className='pb-3'>
                                 Website development with React and Next.js, and API integration with MongoDB and Firestote databases
                                 to implement full stack capabilities.
