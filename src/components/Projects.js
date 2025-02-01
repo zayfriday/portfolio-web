@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import logo from '../assets/sample-logo.jpeg'
 import wgu_cap from '../assets/PGSBPP.pdf'
 import wgu_cap_pic from '../assets/PGSBPP_thumb.png'
-import mcjm_pic from '../assets/newMCJM-thumb.png'
+import mcjm_pic from '../assets/mcjm-thumb-v3.png'
 
 function Projects() {
     return (
@@ -39,14 +39,15 @@ function Projects() {
                     transition={{ duration: 1 }}
                     whileHover={{ scale: 1.05, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
-                    className='relative group my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'>
-                    <a>
-                        <img className='rounded-[10px] w-full h-auto lg:min-h-72 object-fill' src={mcjm_pic} alt="mcjm_thumnail" />
-                    </a>
-                    {/* Tooltip */}
-                    <span className="absolute z-5 hidden group-hover:inline-block top-2/5 left-1/2 bg-gray-700 py-2 px-4 text-white text-sm rounded">
-                        Website currently unavailable
-                    </span>
+                    className='relative px-3 py-5 w-full lg:w-2/5 lg:h-[400px] lg:hover:h-[450px] overflow-hidden transition-all duration-300 ease-in-out'>
+                        <a>
+                        <img 
+                            className='rounded-[10px] object-top w-full h-full object-cover
+                             hover:object-bottom transition-all duration-1000 ease-in-out' 
+                            src={mcjm_pic} 
+                            alt="mcjm_thumnail" 
+                        />
+                        </a>
                 </motion.div>
                 {/* info div */}
                 <motion.div
@@ -60,15 +61,14 @@ function Projects() {
 
                     <div className='flex flex-col gap-3 lg:px-10 text-base lg:text-lg tracking-tight font-light'>
                         <motion.p>
-                            Created a full-stack website for a moving and junk removal company, utilizing React for a dynamic and responsive user interface.
+                            Created a full-stack website for a moving and junk removal company, utilizing Next.js for a dynamic and responsive user interface.
                         </motion.p>
                         <motion.p>
                             Integrated APIs for real-time data interaction, enabling users to receive quotes,
                             upload images, and receive automated email notifications upon form submission.
                         </motion.p>
-                        <motion.p>
-                            Developed a visually appealing client gallery showcasing past work, pulling images from the cloud,
-                            with a polished, animated UI for enhanced user experience across devices.
+                        <motion.p className='mt-2 italic text-slate-700 text-2xl font-medium'>
+                            Website Currently unavilable
                         </motion.p>
                     </div>
                 </motion.div>
