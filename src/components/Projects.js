@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import logo from '../assets/sample-logo.jpeg'
 import wgu_cap from '../assets/PGSBPP.pdf'
 import wgu_cap_pic from '../assets/PGSBPP_thumb.png'
 import mcjm_pic from '../assets/mcjm-thumb-v3.png'
@@ -40,14 +39,12 @@ function Projects() {
                     whileHover={{ scale: 1.05, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
                     className='relative px-3 py-5 w-full lg:w-2/5 lg:h-[400px] lg:hover:h-[450px] overflow-hidden transition-all duration-300 ease-in-out'>
-                        <a>
                         <img 
                             className='rounded-[10px] object-top w-full h-full object-cover
                              hover:object-bottom transition-all duration-1000 ease-in-out' 
                             src={mcjm_pic} 
                             alt="mcjm_thumnail" 
                         />
-                        </a>
                 </motion.div>
                 {/* info div */}
                 <motion.div

@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import pfp from '../assets/zay_portrait.jpg'
 import resume from '../assets/TechResume.pdf'
-import resume_pic from '../assets/TechResume.png'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
 
 
