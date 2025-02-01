@@ -36,9 +36,9 @@ function Projects() {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -300 }}
                     transition={{ duration: 1 }}
-                    whileHover={{ scale: 1.05, transition: 0.2 }}
+                    whileHover={{ scale: 1.1, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
-                    className='relative px-3 py-5 w-full lg:w-2/5 lg:h-[400px] lg:hover:h-[450px] overflow-hidden transition-all duration-300 ease-in-out'>
+                    className='relative px-3 py-5 w-full lg:w-2/5 lg:h-[400px] overflow-hidden'>
                         <img 
                             className='rounded-[10px] object-top w-full h-full object-cover
                              hover:object-bottom transition-all duration-1000 ease-in-out' 
