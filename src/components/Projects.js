@@ -38,10 +38,10 @@ function Projects() {
                     transition={{ duration: 1 }}
                     whileHover={{ scale: 1.1, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
-                    className='relative px-3 py-5 w-full lg:w-2/5 lg:h-[400px] overflow-hidden'>
+                    className='relative px-3 py-5 w-full lg:w-2/5 h-[360px] lg:h-[400px] lg:overflow-hidden'>
                         <img 
                             className='rounded-[10px] object-top w-full h-full object-cover
-                             hover:object-bottom transition-all duration-1000 ease-in-out' 
+                             lg:hover:object-bottom transition-all duration-1000 ease-in-out' 
                             src={mcjm_pic} 
                             alt="mcjm_thumnail" 
                         />
