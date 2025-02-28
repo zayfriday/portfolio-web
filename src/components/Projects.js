@@ -3,11 +3,12 @@ import { motion } from "framer-motion"
 import wgu_cap from '../assets/PGSBPP.pdf'
 import wgu_cap_pic from '../assets/PGSBPP_thumb.png'
 import mcjm_pic from '../assets/mcjm-thumb-v3.png'
+import ai_logo_gen_pic from '../assets/AI-logo-gen-thumbnail.png'
 
 function Projects() {
     return (
         <div id="projects" className='flex flex-col items-start lg:my-20 lg:py-20 pb-30 text-slate-400'>
-            
+
             <div className='w-full flex justify-center justify-self-center'>
                 <motion.h2
                     whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +16,7 @@ function Projects() {
                     transition={{ duration: 0.75 }}
                     className='bg-gradient-to-r from-violet-700 from-40% to-purple-400 to-55% bg-clip-text text-transparent
                     font-semibold text-center text-5xl lg:text-6xl tracking-wide p-2 my-8'>
-                        Projects
+                    Projects
                 </motion.h2>
             </div>
 
@@ -31,20 +32,66 @@ function Projects() {
             </motion.h2>
 
             <div id="web-proj" className='flex flex-wrap items-start justify-center lg:justify-start'>
-                {/* picture div */}
+
+                {/* AI logo gen div */}
                 <motion.div
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -300 }}
                     transition={{ duration: 1 }}
                     whileHover={{ scale: 1.1, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
-                    className='relative px-3 py-5 w-full lg:w-2/5 h-[360px] lg:h-[400px] lg:overflow-hidden'>
-                        <img 
+                    className='relative group px-3 py-5 w-full lg:w-2/5 h-[360px] lg:h-[400px] lg:overflow-hidden'
+                >
+                    <a href="https://ai-logo-generator-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img
                             className='rounded-[10px] object-top w-full h-full object-cover
-                             lg:hover:object-bottom transition-all duration-1000 ease-in-out' 
-                            src={mcjm_pic} 
-                            alt="mcjm_thumnail" 
+                             lg:hover:object-bottom transition-all duration-1000 ease-in-out'
+                            src={ai_logo_gen_pic}
+                            alt="ai_logo_thumnail"
                         />
+                    </a>
+                    {/* Tooltip */}
+                    <span className="absolute z-5 hidden group-hover:inline-block top-1/4 left-2/3 bg-gray-700 py-2 px-4 text-white text-sm rounded">
+                        Open website in new tab
+                    </span>
+                </motion.div>
+                {/* info div */}
+                <motion.div
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: 300 }}
+                    transition={{ duration: 1 }}
+                    className='w-full lg:w-3/5 flex flex-col py-8 pl-6'>
+                    <motion.h3 className='pb-8 lg:px-8 text-2xl lg:text-3xl font-medium'>
+                        AI Logo Generator Website
+                    </motion.h3>
+
+                    <div className='flex flex-col gap-3 lg:px-10 text-base lg:text-lg tracking-tight font-light'>
+                        <motion.p>
+                            Created a website that implements AI to allow you to create a logo within minutes for free. Utilized Next.js, React, CSS, and HTML.
+                        </motion.p>
+                        <motion.p>
+                            Developed REST APIs that implement: Google Firestore Database, Google Gemini AI models, and Hugging Face AI Logos
+                        </motion.p>
+                        <motion.p>
+                            Website idea and design from TubeGuruji.
+                        </motion.p>
+                    </div>
+                </motion.div>
+
+                {/* MCJM div */}
+                <motion.div
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -300 }}
+                    transition={{ duration: 1 }}
+                    whileHover={{ scale: 1.1, transition: 0.2 }}
+                    whileTap={{ scale: 1.03 }}
+                    className='relative px-3 py-5 w-full lg:w-2/5 h-[360px] lg:h-[400px] lg:overflow-hidden mt-4'>
+                    <img
+                        className='rounded-[10px] object-top w-full h-full object-cover
+                             lg:hover:object-bottom transition-all duration-1000 ease-in-out'
+                        src={mcjm_pic}
+                        alt="mcjm_thumnail"
+                    />
                 </motion.div>
                 {/* info div */}
                 <motion.div
@@ -91,7 +138,8 @@ function Projects() {
                     transition={{ duration: 1 }}
                     whileHover={{ scale: 1.05, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
-                    className='relative group my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'>
+                    className='relative group my-auto px-3 py-5 flex justify-center items-center w-full lg:w-2/5 aspect-w-14 aspect-h-8'
+                >
                     {/* thumbnail and link to download pdf */}
                     <a href={wgu_cap} target="_blank" download="PGSBPP.pdf" rel="noopener noreferrer">
                         <img className='rounded-[10px] w-full min-h-72 max-h-112 object-cover' src={wgu_cap_pic} alt="cap_proj_thumb" />
