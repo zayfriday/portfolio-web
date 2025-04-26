@@ -85,13 +85,20 @@ function Projects() {
                     transition={{ duration: 1 }}
                     whileHover={{ scale: 1.1, transition: 0.2 }}
                     whileTap={{ scale: 1.03 }}
-                    className='relative px-3 py-5 w-full lg:w-2/5 h-[360px] lg:h-[400px] lg:overflow-hidden mt-4'>
-                    <img
-                        className='rounded-[10px] object-top w-full h-full object-cover
+                    className='relative px-3 py-5 w-full lg:w-2/5 h-[360px] lg:h-[400px] lg:overflow-hidden mt-4'
+                >
+                    <a href="https://www.motorcityjunknmovin.com/" target="_blank" rel="noopener noreferrer">
+                        <img
+                            className='rounded-[10px] object-top w-full h-full object-cover
                              lg:hover:object-bottom transition-all duration-1000 ease-in-out'
-                        src={mcjm_pic}
-                        alt="mcjm_thumnail"
-                    />
+                            src={mcjm_pic}
+                            alt="mcjm_thumnail"
+                        />
+                    </a>
+                    {/* Tooltip */}
+                    <span className="absolute z-5 hidden group-hover:inline-block top-1/4 left-2/3 bg-gray-700 py-2 px-4 text-white text-sm rounded">
+                        Open website in new tab
+                    </span>
                 </motion.div>
                 {/* info div */}
                 <motion.div
@@ -110,9 +117,6 @@ function Projects() {
                         <motion.p>
                             Integrated APIs for real-time data interaction, enabling users to receive quotes,
                             upload images, and receive automated email notifications upon form submission.
-                        </motion.p>
-                        <motion.p className='mt-2 italic text-slate-700 text-2xl font-medium'>
-                            Website Currently unavilable
                         </motion.p>
                     </div>
                 </motion.div>
