@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import pfp from '../assets/zay_portrait.jpg'
-import resume from '../assets/TechResume.pdf'
+import resume from '../assets/TechResume-Best.pdf'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
 
 
@@ -37,7 +37,7 @@ function About() {
                         transition={{ duration: 1 }}
                         href={resume} 
                         target="_blank" 
-                        download="TechResume.pdf" 
+                        download="TechResume-Best.pdf" 
                         rel="noopener noreferrer" 
                         className='flex items-center text-indigo-500 hover:text-indigo-900 gap-2 lg:text-left py-6 text-2xl lg:text-3xl'>
                             <motion.h4
